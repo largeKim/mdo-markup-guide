@@ -1,0 +1,17 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": ["eslint:recommended","prettier"],
+  "plugins": ["md-html"],
+  "overrides": [
+    {
+      "files": ["*.html"],
+      "parser": "eslint-html-parser",
+      "extends": ["plugin:md-html/recommended"]
+    }
+  ],
+  "rules": {}
+}
